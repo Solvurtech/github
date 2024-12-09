@@ -1,0 +1,4 @@
+Virtualization is a technology that allows the creation of a virtual version of something, 
+such as a server storage device network or operating systems. 
+
+ 

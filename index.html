@@ -3,11 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Git Learning Guide</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007acc;
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007acc;
+            border-bottom: 2px solid #e7e7e7;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.8;
+        }
+        .command-section {
+            margin-bottom: 30px;
+        }
+        .command-box {
+            background: #f4f6f8;
+            border-left: 5px solid #007acc;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .tip {
+            background: #fffae6;
+            border-left: 5px solid #ffd54f;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .btn {
+            background: #007acc;
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px 0;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #005f99;
+        }
+    </style>
 </head>
 <body>
-    <h1> This is version V2 </h1>
-    <h1>This is version V3</h1>
-    <h1> This is our version v3</h1>
+
+<header>
+    <h1>Git Learning Guide</h1>
+    <p>Your ultimate step-by-step guide to mastering Git commands and workflows.</p>
+</header>
+
+<main>
+    <section class="command-section">
+        <h2>1. Setting Up a Remote Repository</h2>
+        <p>Link your local repository to a remote one for version control and collaboration.</p>
+        <div class="command-box">
+            <code>git remote add origin https://github.com/Solvurtech/gitlearning.git</code>
+        </div>
+        <div class="tip">
+            <strong>Tip:</strong> Replace the URL with your repository's link to set up your remote repository.
+        </div>
+    </section>
+
+    <section class="command-section">
+        <h2>2. Rename the Current Branch</h2>
+        <p>Switch the default branch name to something meaningful, like <code>main</code>.</p>
+        <div class="command-box">
+            <code>git branch -M main</code>
+        </div>
+        <div class="tip">
+            <strong>Tip:</strong> Branch names should be descriptive, indicating their purpose.
+        </div>
+    </section>
+
+    <section class="command-section">
+        <h2>3. Push Your Changes to a Remote Repository</h2>
+        <p>Upload your local commits to the main branch on the remote repository.</p>
+        <div class="command-box">
+            <code>git push -u origin main</code>
+        </div>
+    </section>
+
+    <section class="command-section">
+        <h2>4. View Commit History</h2>
+        <p>See a log of all the commits made to the repository, including author and date.</p>
+        <div class="command-box">
+            <code>git log</code>
+        </div>
+    </section>
+
+    <section class="command-section">
+        <h2>5. Make Changes and Stage Files</h2>
+        <p>Edit files and prepare them for a commit by staging.</p>
+        <div class="command-box">
+            <code>nano index.html</code> <br>
+            <code>git add .</code>
+        </div>
+        <div class="tip">
+            <strong>Tip:</strong> Use <code>git add filename</code> to stage specific files instead of all changes.
+        </div>
+    </section>
+
+    <section class="command-section">
+        <h2>6. Commit Your Changes</h2>
+        <p>Save staged changes with a meaningful message describing what was done.</p>
+        <div class="command-box">
+            <code>git commit -m "This is version 5"</code>
+        </div>
+    </section>
+
+    <section class="command-section">
+        <h2>7. Clone a Repository</h2>
+        <p>Make a local copy of an existing remote repository.</p>
+        <div class="command-box">
+            <code>git clone https://github.com/Solvurtech/Akhil-Pathania.git</code>
+        </div>
+    </section>
+
+    <section class="command-section">
+        <h2>8. Create and Switch to a Branch</h2>
+        <p>Create a new branch for specific changes and switch to it.</p>
+        <div class="command-box">
+            <code>git branch design/full</code> <br>
+            <code>git checkout design/full</code>
+        </div>
+    </section>
+
+    <section class="command-section">
+        <h2>9. Merge Changes from Another Branch</h2>
+        <p>Incorporate changes from another branch into the current branch.</p>
+        <div class="command-box">
+            <code>git checkout main</code> <br>
+            <code>git merge design/full</code>
+        </div>
+        <div class="tip">
+            <strong>Note:</strong> Resolve any conflicts that arise during the merge.
+        </div>
+    </section>
+
+    <section class="command-section">
+        <h2>10. Create and Use a <code>.gitignore</code> File</h2>
+        <p>Prevent Git from tracking specific files or directories.</p>
+        <div class="command-box">
+            <code>nano .gitignore</code> <br>
+            <code>git add .gitignore</code> <br>
+            <code>git commit -m "Added .gitignore file"</code>
+        </div>
+    </section>
+
+    <section class="command-section">
+        <h2>11. Push a Branch to Remote</h2>
+        <p>Push changes from your local branch to the corresponding remote branch.</p>
+        <div class="command-box">
+            <code>git push origin design/full</code>
+        </div>
+    </section>
+
+    <a href="#" class="btn">Download Git Commands as PDF</a>
+</main>
+
+<footer>
+    <p>Made with ❤️ by Akhil Pathania</p>
+</footer>
+
 </body>
 </html>
