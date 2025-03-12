@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Essential Git Commands</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        h1, h2 { color: #333; }
+        code { background: #f4f4f4; padding: 4px; border-radius: 4px; }
+        .command { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>100 Essential Git Commands with Explanations</h1>
+    <p>This guide will walk you through the most important Git commands, step by step, with clear explanations.</p>
+
+    <h2>1. Initializing and Cloning</h2>
+    <div class="command">
+        <strong>1. <code>git init</code></strong>
+        <p>Initializes a new Git repository in the current directory. This creates a <code>.git</code> folder containing all version control information.</p>
+    </div>
+    
+    <div class="command">
+        <strong>2. <code>git clone [url]</code></strong>
+        <p>Clones an existing repository from a remote source (e.g., GitHub) to your local machine.</p>
+    </div>
+
+    <h2>2. Staging and Committing</h2>
+    <div class="command">
+        <strong>3. <code>git add [file]</code></strong>
+        <p>Stages a specific file for commit, marking it to be included in the next snapshot.</p>
+    </div>
+
+    <div class="command">
+        <strong>4. <code>git add .</code></strong>
+        <p>Stages all changes (new, modified, deleted files) in the current directory.</p>
+    </div>
+    
+    <div class="command">
+        <strong>5. <code>git status</code></strong>
+        <p>Shows the current status of the repository, including staged, unstaged, and untracked files.</p>
+    </div>
+
+    <div class="command">
+        <strong>6. <code>git commit -m "message"</code></strong>
+        <p>Commits the staged changes to the repository with a descriptive message.</p>
+    </div>
+
+    <h2>3. Branching and Merging</h2>
+    <div class="command">
+        <strong>7. <code>git branch</code></strong>
+        <p>Lists all branches in the repository.</p>
+    </div>
+    
+    <div class="command">
+        <strong>8. <code>git branch [branch-name]</code></strong>
+        <p>Creates a new branch with the specified name.</p>
+    </div>
+    
+    <div class="command">
+        <strong>9. <code>git checkout [branch-name]</code></strong>
+        <p>Switches to the specified branch.</p>
+    </div>
+
+    <div class="command">
+        <strong>10. <code>git merge [branch]</code></strong>
+        <p>Merges the specified branch into the current branch.</p>
+    </div>
+    
+    <h2>4. Working with Remote Repositories</h2>
+    <div class="command">
+        <strong>11. <code>git remote -v</code></strong>
+        <p>Lists the remote repositories linked to your project.</p>
+    </div>
+    
+    <div class="command">
+        <strong>12. <code>git push</code></strong>
+        <p>Pushes committed changes to the remote repository.</p>
+    </div>
+    
+    <div class="command">
+        <strong>13. <code>git pull</code></strong>
+        <p>Fetches and integrates changes from the remote repository into the local branch.</p>
+    </div>
+
+    <h2>5. Resetting and Reverting</h2>
+    <div class="command">
+        <strong>14. <code>git reset --hard</code></strong>
+        <p>Resets the working directory and staging area to the last commit, discarding changes.</p>
+    </div>
+
+    <div class="command">
+        <strong>15. <code>git revert [commit]</code></strong>
+        <p>Creates a new commit that undoes a previous commit.</p>
+    </div>
+    
+    <h2>6. Inspecting Repository</h2>
+    <div class="command">
+        <strong>16. <code>git log</code></strong>
+        <p>Displays the commit history.</p>
+    </div>
+    
+    <div class="command">
+        <strong>17. <code>git diff</code></strong>
+        <p>Shows the differences between your working directory and the last commit.</p>
+    </div>
+    
+    <h2>More Advanced Commands</h2>
+    <p>The above commands cover the basics of Git. More advanced commands like <code>git cherry-pick</code>, <code>git rebase</code>, and <code>git bisect</code> will be covered in further sections.</p>
+</body>
+</html>
+
